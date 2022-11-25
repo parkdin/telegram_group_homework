@@ -24,6 +24,6 @@ jobs:
       - name: Run tests
         run: |
           pytest -v --tb=no -q
-        - name: Send requests
+      - name: Send requests
         run: |
           python test/sendtest.py ${{github.actor}} '${{github.repository}}'
